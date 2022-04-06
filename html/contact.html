@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+     <link rel="stylesheet" href="../css/contactPage.css">
+</head>
+<body>
+    <!--Navigation bar w/ Logo-->
+<nav class = "navbar">
+    <div class="logo"><a href = "../index.html"><img src = "../images/vicious-cycles-logo.png" alt="Vicious Cycles logo"></a></div>
+    <ul class = "nav-list">
+            <li class = "list-item"><a target = "_self" href = "./products.html">Products</a></li>
+            <li class = "list-item"><a target = "_self" href = "#">Services</a></li>
+            <li class = "list-item"><a target = "_self" href = "#">About Us</a></li>
+            <li class = "list-item"><a target = "_self" href = "./contact.html">Contact</a></li>
+    </ul>
+</nav>
+<div class="contactBanner">
+    <!--Image from Free Use Site-->
+      <img src="../images/eBike.jpg" alt="Stock Image of Bicycles" style="width:100%;">
+      <div class="contactBannerText">Contact Us</div>
+    </div>
+  
+
+<section>
+    <form id = "contact" method = "post" action = "">
+    <fieldset>
+<legend>Get in Contact</legend>
+<div class="textInputs">
+    <label class = "formName" for = "userName">First and Last Name</label> <input type = "text" name = "name" id = "userName"> <br>
+    <label class = "formEmail" for = "userEmail">Your Email Address</label> <input type = "email" name = "email" id = "userEmail"> <br>
+    <label class = "formPhone" for = "userPhone">Phone Number</label> <input type = "text" name = "phone" id = "userPhone"> <br>
+</div>
+
+<div class = "selectButtons">
+    <label>How do you Prefer to be contacted? </label> <br>
+    <input type = "checkbox" name = "preferredContact" value = "email" id = "email"><label for = "email">E-mail</label>
+<br>
+    <input type = "checkbox" name = "preferredContact" value = "phone" id = "phone"><label for = "phone">Phone</label>
+<br>
+<input type = "checkbox" name = "preferredContact" value = "none" id = "none"><label for = "none">No Need for Contact</label>
+
+</div>
+
+<div class = "radioButtons">
+    <label>Have you Shopped with Vicious Cycles before? </label> <br>
+    <input type = "radio" name = "shoppedBefore" value = "yes" id = "yes"><label for = "yes">Yes</label>
+    <br>
+    <input type = "radio" name = "shoppedBefore" value = "no" id = "no"><label for = "no">No</label>
+</div>
+
+<hr>
+
+
+
+<div class = "dropDownContainer"> 
+    <label>Reason for Contacting</label>
+    <select class = "select" name="contactType" id="contactType">
+        <option disabled selected >--Please choose an option--</option>
+    <option value="question">Question</option>
+    <option value="concern">Concern</option>
+    <option value="inquiry">General Inquiry</option>
+        <option value="event">Schedule an Event</option>
+    </select>
+</div>
+
+<div class= "textInputs">
+    <label class = "reasonLabel" for = "userReason">Write your Inquiry</label> <textarea class = "formReason" name = "reason" id = "userReason"> </textarea>
+</div>
+    <input class = "formSubmit" type = "submit">
+
+    
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>

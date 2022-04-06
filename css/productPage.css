@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(202, 206, 202);
+}
+.navbar {
+    background-color: rgb(123, 155, 115);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    font-family: "Arial";
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.logo img {
+    height: 40px;
+    align-items: center; 
+}
+
+.nav-list .list-item a:hover {
+    color: rgb(30, 107, 23);
+}
+.nav-list {
+    list-style-type: none;
+    
+}
+
+.nav-list .list-item a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+
+}
+
+.nav-list .list-item {
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .container img {
+      height: 500px;
+      width: auto;
+      object-fit: cover;
+  }
+
+
+  /* Centered text */
+  .bannerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vh;
+    font-family: calibri;
+    text-shadow: 10px 5px 5px black;
+  }
+  
+
+/*Product Page CSS */
+  
+#productCards {
+
+    justify-items: center;
+    width: 100%;
+    margin-top: 80px;
+    display: grid;
+    grid-gap: .5em;
+    grid-template-areas: 
+    "product1 product2 product3"
+    "product4 product5 product6";
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 50px;
+
+}
+
+#productCards > div {
+    background-color: rgb(228, 228, 228);
+      width: 36px;
+      height: 600px;
+      overflow: hidden;
+      padding: 40px 30px 100px 30px;
+}
+
+
+
+#productCards > div {
+  border-radius: 2vh;
+  width: 360px;
+  height: 600px;
+  overflow: hidden;
+  padding: 40px 30px 100px 30px;
+  margin-bottom: 20px;
+}
+
+#productCards > div:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  background-color: rgb(176, 197, 183);
+}
+
+#productCards > div img {
+      height: 200px;
+      width: 300px;
+      overflow: hidden;
+      object-fit: cover;
+}
+
+#productCards > div h2 {
+    padding-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  cursor:default;
+  
+}
+
+.productDesc {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.productPrice {
+  margin-top: 15vh;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  
+}

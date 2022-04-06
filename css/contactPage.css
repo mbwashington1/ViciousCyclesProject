@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(228, 228, 228);
+}
+.navbar {
+    background-color: rgb(132, 156, 126);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    font-family: "Arial";
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.logo img {
+    height: 40px;
+    align-items: center; 
+}
+
+.nav-list .list-item a:hover {
+    color: rgb(30, 107, 23);
+}
+.nav-list {
+    list-style-type: none;
+    
+}
+
+.nav-list .list-item a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+
+}
+
+.nav-list .list-item {
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+
+/*Contact Page CSS*/
+
+.contactBanner img {
+    height: 300px;
+    width: auto;
+    object-fit: cover;
+}
+  
+  .contactBannerText {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vh;
+    font-family: calibri;
+    color: white;
+    text-shadow: 10px 5px 5px black;
+  }
+
+/*encompasses the entire form*/
+fieldset {
+    width: 95%;
+    margin: 10px 2.5% 0 2.5%;
+    border: none;
+}
+
+legend {
+    font-size: 2em;
+    padding: 20px .25em;
+    color: rgb(0, 0, 0);
+}
+
+/*All text input boxes */
+.textInputs input {
+    display: block;
+    margin: 10px 10% 0 10%;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/*Labels for input boxes (Name, Email, etc)*/
+.textInputs label {
+    margin-left: 10%;
+font-weight: bold;
+}
+
+/* User's preferred contact method */
+.selectButtons {
+    width: 80%;
+    margin: 2vh 10%;
+}
+
+.selectButtons input {
+    padding: 200px;
+    margin-top: 25px;
+        margin-right: 10px;
+}
+
+.selectButtons label {
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+/* Radio Buttons */
+.radioButtons {
+    width: 80%;
+    margin: 4vh 10%;
+}
+
+.radioButtons label {
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.radioButtons input {
+    padding: 200px;
+    margin-top: 25px;
+        margin-right: 10px;
+}
+
+
+
+/* Reason for Contact dropdown menu */
+.dropDownContainer {
+    margin-top: 3vh;
+}
+
+.dropDownContainer label {
+    margin-left: 10%;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.select {
+    padding: 20px;
+    width: 80%;
+    margin: 0 10%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* Description Text Box */
+.textInputs > .reasonLabel{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+ 
+.textInputs .formReason{
+    width: 80%;
+    height: 200px;
+    margin-top: 5px;
+    margin-left: 10%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+
+}
+
+.formSubmit {
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+    margin-left: 50%;
+    border-radius: 1em;
+    padding: 25px;
+    background-color: rgb(132, 168, 132);
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+label:first-of-type {
+    margin-top: 0;
+}
