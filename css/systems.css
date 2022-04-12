@@ -1,8 +1,12 @@
+/* Importing Google Fonts into CSS */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Righteous', cursive;
 }
 
 body {
@@ -15,14 +19,13 @@ body {
     justify-content: space-around;
     align-items: center;
     font-size: 20px;
-    font-family: "Arial";
     white-space: nowrap;
     overflow: hidden;
 
 }
 
 .logo img {
-    height: 40px;
+    height: 3vh;
     align-items: center; 
 }
 
@@ -46,6 +49,26 @@ body {
     padding: 20px 10px;
 }
 
+
+ul li ul.dropdown li {
+  padding: 10px;
+  display: block;
+}
+
+ul li ul.dropdown {
+  padding: 1vh;
+  width: 15vh;
+  background: rgb(118, 136, 118);
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+}
+
+
 /* Container holding the image and the text */
 .container {
     position: relative;
@@ -67,8 +90,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 6vh;
-    font-family: calibri;
-    text-shadow: 10px 5px 5px black;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    font-family: 'Righteous', cursive;
   }
   
   .advertisements {
@@ -96,9 +119,9 @@ body {
   }
 
   .advertisement1 h2 {
+    font-size: 3vh;
       padding-top: 10vh;
     padding-left: 3vh;
-    font-family: Arial, Helvetica, sans-serif;
     
   }
 
@@ -113,9 +136,9 @@ body {
     shape-outside:square(50%);
 }
 .advertisement2 h2 {
+  font-size: 3vh;
     padding-top: 10vh;
     padding-left: 3vh;
-    font-family: Arial, Helvetica, sans-serif;
   }
 
 
@@ -133,12 +156,11 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 6vh;
-    font-family: calibri;
     text-shadow: 10px 5px 5px black;
 }
 
   .emailContainer img {
-      height: 300px;
+      height: 30vh;
       width: auto;
       object-fit: cover;
   }
@@ -151,8 +173,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 6vh;
-    font-family: calibri;
-    text-shadow: 10px 5px 5px black;
+    text-shadow: rgb(255, 255, 255);
   }
   
 
@@ -168,17 +189,30 @@ body {
     border: 1px solid black;
   }
 
-
-.socialMediaLinks {
-    margin-left: 50%;
-    margin-top: 5vh;
+  
+  .socialMediaLinks {
+    width: 100%;
 }
 
-  .socialMediaLinks img{
-      padding: 10px;
-      width: 5vh;
+.socialMediaLinks a{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+    padding: 10px;
+    width: 5vh;
+}
+
+.socialMediaLinks img{
+    width: 4vh;
+}
+
+
+  .socialMediaLinks h4 {
+    text-align: center;
+    padding-bottom: 2vh;
   }
 
-
-
-
+  .socialMediaLinks h5 {
+    text-align: center;
+    padding-bottom: 3vh;
+  }

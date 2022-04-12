@@ -8,22 +8,34 @@
     <title>Vicious Cycles</title>
     <!--Relative link to CSS file-->
     <link rel="stylesheet" href="css/systems.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 
 <!--End of page head, start of body-->
 <body>
 <!--Navigation bar w/ Logo-->
 <nav class = "navbar">
-    <div class="logo"><a href = "./index.html"><img src = "images/vicious-cycles-logo.png" alt="Vicious Cycles logo"></a></div>
+    <div class="logo">
+      <a href = "./index.html"><img src = "./images/vicious-cycles-logo.png" alt="Vicious Cycles logo"></a>
+    </div>
+
     <ul class = "nav-list">
-            <li class = "list-item"><a target = "_self" href = "./html/products.html">Products</a></li>
-            <li class = "list-item"><a target = "_self" href = "">Services</a></li>
-            <li class = "list-item"><a target = "_self" href = "#">About Us</a></li>
+        <li class = "list-item"><a target = "_self" href = "./index.html">Home</a></li>
+            <li class = "list-item">
+            <a target = "_self" href = "">Products</a>
+                <ul class = "dropdown">
+                    <li><a href = "./html/products_bicycles.html">Bicycles</a></li>
+                    <li><a href = "./html/products_accessories.html">Accessories</a></li>
+                </ul>
+        </li>
+            <li class = "list-item"><a target = "_self" href = "./html/services.html">Services</a></li>
+            <li class = "list-item"><a target = "_self" href = "./html/aboutUs.html">About Us</a></li>
             <li class = "list-item"><a target = "_self" href = "./html/contact.html">Contact</a></li>
+            <li class = "list-item"><a target = "_self" href = "./html/contact.html">Hours</a></li>
     </ul>
 </nav>
 <div class="container">
   <!--Image from Free Use Site-->
-    <img src="images/cyclists.jpg" alt="Stock Image of Bicycles" style="width:100%;">
+    <img src="images/mountainBiking.jpg" alt="Stock Image of Bicycles" style="width:100%;">
     <div class="bannerText">The Triangle's Greatest Bike Shop!</div>
   </div>
 
@@ -32,13 +44,15 @@
   <div class = "advertisement1">
       <!--Image from Free Use Site-->
     <img src= "images/bikeSunset.jpg" alt = "Image of bike on cliff at sunset">  
-    <h2>The new Stealth Bike, Exclusively available now at Vicious Cycles. Pre-order for 15% off your next order.<h2>
-
+    <h2>Voted "Raleigh's Favorite Bike Shop" in 2021, Vicious Cycles continues to strive for excellence in customer
+      satisfaction and trust. Call today or visit a store for more help!
+      <h2>
+            </h2>
     </div>
 
     <div class="advertisement2">
       <img src = "images/newBike.jpg" alt="New Bike Image">
-      <h2>Make Vicious Cycles a part of your next venture. Visit in-person to get a free consultation on recommended gear for optimal performance! 10% off your in-store purchase included.</h2>
+      <h2>The new Stealth Bike available Exclusively at Vicious Cycles. Order this week and get 15% off your purchase.</h2>
     </div>
   </div>
 
@@ -53,9 +67,12 @@
 
   <div class="socialMediaLinks">
       <footer>
-      <a href=""><img src= "images/facebook_logo.png" alt="Facebook logo"></a>
-      <a href=""><img src= "images/twitter-logo.png" alt="Twitter logo"></a>
-      </footer>
-  </div>
+      <a href="https://www.facebook.com/" target="_blank"><img src= "images/facebook_logo.png" alt="Facebook logo"></a>
+      <a href="https://www.twitter.com/" target="_blank" ><img src= "images/twitter-logo.png" alt="Twitter logo"></a>
+        <h4>Get In Contact: viciouscycles@gmail.com</h4>   
+        <h5>© Vicious Cycles 2022</h5>
+        </footer>
+    </div>
+  
 </body>
 </html>

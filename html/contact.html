@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>Contact</title>
      <link rel="stylesheet" href="../css/contactPage.css">
 </head>
 <body>
     <!--Navigation bar w/ Logo-->
-<nav class = "navbar">
-    <div class="logo"><a href = "../index.html"><img src = "../images/vicious-cycles-logo.png" alt="Vicious Cycles logo"></a></div>
-    <ul class = "nav-list">
-            <li class = "list-item"><a target = "_self" href = "./products.html">Products</a></li>
-            <li class = "list-item"><a target = "_self" href = "#">Services</a></li>
-            <li class = "list-item"><a target = "_self" href = "#">About Us</a></li>
-            <li class = "list-item"><a target = "_self" href = "./contact.html">Contact</a></li>
-    </ul>
-</nav>
+    <nav class = "navbar">
+        <div class="logo"><a href = "../index.html"><img src = "../images/vicious-cycles-logo.png" alt="Vicious Cycles logo"></a></div>
+        <ul class = "nav-list">
+            <li class = "list-item"><a target = "_self" href = "../index.html">Home</a></li>
+                <li class = "list-item">
+                <a target = "_self" href = "">Products</a>
+                    <ul class = "dropdown">
+                        <li><a href = "./products_bicycles.html">Bicycles</a></li>
+                        <li><a href = "./products_accessories.html">Accessories</a></li>
+                    </ul>
+            </li>
+                <li class = "list-item"><a target = "_self" href = "./services.html">Services</a></li>
+                <li class = "list-item"><a target = "_self" href = "./aboutUs.html">About Us</a></li>
+                <li class = "list-item"><a target = "_self" href = "./contact.html">Contact</a></li>
+                <li class = "list-item"><a target = "_self" href = "./hours.html">Hours</a></li>
+        </ul>
+    </nav>
+
+
 <div class="contactBanner">
     <!--Image from Free Use Site-->
       <img src="../images/eBike.jpg" alt="Stock Image of Bicycles" style="width:100%;">
@@ -31,7 +41,7 @@
 <legend>Get in Contact</legend>
 <div class="textInputs">
     <label class = "formName" for = "userName">First and Last Name</label> <input type = "text" name = "name" id = "userName"> <br>
-    <label class = "formEmail" for = "userEmail">Your Email Address</label> <input type = "email" name = "email" id = "userEmail"> <br>
+    <label class = "formEmail" for = "userEmail">Email Address</label> <input type = "email" name = "email" id = "userEmail"> <br>
     <label class = "formPhone" for = "userPhone">Phone Number</label> <input type = "text" name = "phone" id = "userPhone"> <br>
 </div>
 
@@ -77,4 +87,16 @@
         </form>
     </section>
 </body>
+<!-- Footer including Social media, email, and copyright -->
+<div class="socialMediaLinks">
+    <footer>
+    <a href="https://www.facebook.com/" target="_blank"><img src= "../images/facebook_logo.png" alt="Facebook logo"></a>
+    <a href="https://www.twitter.com/" target="_blank" ><img src= "../images/twitter-logo.png" alt="Twitter logo"></a>
+    <h4>Get In Contact: viciouscycles@gmail.com</h4>   
+    <h5>© Vicious Cycles 2022</h5>
+
+    </footer>
+</div>
+
+
 </html>

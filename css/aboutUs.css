@@ -1,0 +1,150 @@
+/* Importing Google Fonts into CSS */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/* CSS for all HTML */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', cursive;
+}
+
+body {
+    background-color: rgb(228, 228, 228);
+}
+
+/* Navigation Bar CSS at top of each page */
+.navbar {
+    background-color: rgb(132, 156, 126);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.logo img {
+    height: 40px;
+    align-items: center; 
+}
+
+.nav-list .list-item a:hover {
+    color: rgb(30, 107, 23);
+}
+.nav-list {
+    list-style-type: none;
+    
+}
+
+.nav-list .list-item a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Righteous';
+
+}
+
+.nav-list .list-item {
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+/* CSS for Dropdown menu */
+ul li ul.dropdown li {
+    padding: 10px;
+    display: block;
+  }
+  
+  ul li ul.dropdown {
+    padding: 1vh;
+    width: 15vh;
+    background: rgb(118, 136, 118);
+    position: absolute;
+    z-index: 999;
+    display: none;
+  }
+  
+  ul li:hover ul.dropdown {
+    display: block;
+  }
+
+  
+
+
+
+
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .container img {
+      height: 50vh;
+      width: auto;
+      object-fit: cover;
+  }
+
+
+  /* Centered text */
+  .bannerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vh;
+    font-family: 'Righteous', cursive;
+  }
+  
+
+  /* Body CSS */
+.sideImage img {
+    float: left;
+    width: 30vh;
+    height: 60vh;
+    object-fit: cover;
+    margin: 3vh 2vh 5vh 2vh;
+}
+
+
+  .textBody {
+      font-size: 2vh;
+      padding: 5vh;
+  }
+
+  
+  /* CSS for Footer */
+.socialMediaLinks {
+    margin-top: 20vh;
+    width: 100%;
+}
+
+  .socialMediaLinks a{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+      padding: 10px;
+      width: 5vh;
+  }
+
+  .socialMediaLinks img{
+      width: 4vh;
+  }
+
+
+  .socialMediaLinks h4 {
+    text-align: center;
+    padding-bottom: 2vh;
+  }
+
+  .socialMediaLinks h5 {
+    text-align: center;
+    padding-bottom: 3vh;
+  }
