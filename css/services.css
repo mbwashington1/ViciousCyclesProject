@@ -123,13 +123,19 @@ ul li:hover ul.dropdown {
 }
   
 
+.package-name {
+  list-style-type: none;
+  font-size: 5vh;
+}
+
+
 
  #serviceContainer div ul {
      padding-bottom: 3vh;
  margin-bottom: 3vh;
      color: white;
       font-size: 3vh;
-      list-style-type:circle;
+      list-style-type: disc;
         text-align: right;
         list-style-position: inside;
   }
